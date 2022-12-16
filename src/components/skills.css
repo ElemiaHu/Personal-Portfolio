@@ -1,0 +1,51 @@
+#seperator, #seperator1 {
+    height: 1px;
+    width: 70%;
+    margin: 0 15%;
+    background-color: rgb(159,138,119);
+}
+
+@media screen and (max-width: 700px) {
+    .skillsContainer {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    #skillsTitle {
+        text-align: center;
+    }
+}
+
+.skillsContainer {
+    display: flex;
+    justify-content: center;
+    color: rgb(68, 68, 68);
+    padding: 20px 10%;
+}
+
+#skillsTitle {
+    font-weight: 900;
+    font-size: 30px;
+    margin: 30px 40px 20px 40px;
+}
+
+.frontend, .fullstack, .git {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.skillItem {
+    font-weight: 600;
+    font-size: 18px;
+    min-width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillItem img {
+    width: 50px;
+    margin: 10px
+}

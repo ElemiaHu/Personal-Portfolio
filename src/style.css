@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* color: rgb(96,72,45) */
+}
+
+body {
+    margin: 0;
+    background-color: rgb(231,225,216);
+}
+
+header {
+    padding: 8px 20px 8px 40px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(159,138,119);
+    box-shadow: 2px 2px 18px rgba(159, 138, 119, 0.847);
+    color: beige;
+    font-weight: bold;
+    z-index: 9;
+}
+
+#name {
+    font-size: 40px;
+    font-family: 'Oleo Script', cursive;
+    text-decoration: none;
+    color: beige;
+    min-width: 150px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation * {
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 beige;
+    color: beige;
+    margin: 10px;
+    padding: 0 5px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.navigation .nav:hover, .navigation a:hover {
+    box-shadow: inset 140px 0 0 0 beige;
+    color: rgb(159,138,119);
+}
+
+@media screen and (max-width: 750px)  {
+    header {padding: 8px 20px;}
+    .navigation * {margin: 0 5px;}
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    width: 800px;
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(68, 68, 68);
+    border-radius: 5px;
+    background-color: rgb(236, 232, 225);
+    box-shadow: 0 0 0 8px rgb(208,196,185);
+}
+
+@media screen and (max-width: 1000px) {
+    form {
+        width: 90%;
+    }
+}
+
+.input {
+    width: 100%;
+    display: flex;
+}
+
+.contact-input {
+    width: 48%;
+    margin-right: 2%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-name, .contact-email {
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px 0;
+    padding: 0 10px;
+    background-color: rgb(238, 236, 233);
+}
+
+.subject-input {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subject {
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px 0;
+    padding: 0 10px;
+    background-color: rgb(238, 236, 233);
+}
+
+.message-input {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    height: 300px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: rgb(238, 236, 233);
+}
+
+.submit {
+    width: 100%;
+    text-align: center;
+}
+
+.submit-button {
+    width: 200px;
+    padding: 10px 0;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    border: 2px solid rgb(208,196,185);
+    border-radius: 10px;
+}
+
+.submit-button:hover {
+    background-color: rgb(208,196,185);
+}
+
+.unsent {
+    opacity: 0;
+}
+
+.sent {
+    z-index: 999;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    top: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 350px;
+    padding: 20px 10px;
+    background-color: rgba(159,138,119,0.8);
+    border-radius: 20px;
+    font-size: 20px;
+    color: snow;
+    line-height: 2;
+    transition: 500ms;
+    opacity: 1;
+}
+
+/* #greeting {
+    margin: 30px 0;
+    text-align: center;
+}
+
+#hey {
+    font-size: 50px;
+    font-family: 'Oleo Script', cursive;
+}
+
+#greeting .intro {
+    font-size: 22px;
+}
+
+#greeting div {
+    color: rgb(68, 68, 68);
+    font-family: 'Handlee', cursive;
+    font-weight: 600;
+    line-height: 2;
+} */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.791);
+    margin-top: 40px;
+    padding: 10px 0;
+    text-align: center;
+    color: beige;
+    width: 100%;
+}
+
+.links img {
+    margin: 10px 10px;
+}
+
+footer div:last-child {
+    font-size: 15px;
+}

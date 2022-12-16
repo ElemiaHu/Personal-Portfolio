@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+.experience-container {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-title {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+}
+
+#accenture, #fudan, #northeastern {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    margin: 25px 0;
+    padding: 20px 0;
+    border: 1px solid rgb(202, 192, 179);
+    background-color: rgb(233, 226, 214);
+    box-shadow: 6px 6px 0 rgb(208,196,185);
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    #accenture, #fudan, #northeastern {
+        width: 90%;
+    }
+}
+
+.logo {
+    width: 100px;
+    margin: 20px 20px;
+}
+
+.description-container {
+    width: 700px;
+    line-height: 1.7;
+}
+
+.experience-description {margin: 0 20px;}
+.name, .degree {margin: 0 20px;}
+.name {
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+}
+.duration {font-weight: 100;}
+.degree {font-style: italic;}
+ul {margin-top: 0;}
